@@ -29,7 +29,6 @@
 
 <img width="220px" src="https://gitee.com/Kunaly/picture-bed/raw/master/img/logo2.png">
 
-
 <div style = "font-weight: 100; font-size: 1.5rem; 
     color: rgb(60, 60, 60); text-align: center;
     text-shadow: 0.3rem 0.3rem 0.4rem rgba(0,0,0,.15);
@@ -50,8 +49,6 @@
 -->
 
 </div>
-
-
 
 [<i class="fa fa-hand-o-right fa-1x"></i> CSDN](https://kunaly.blog.csdn.net)
 [<i class="fa fa-spinner fa-spin"></i> 开始阅读](README.md)
