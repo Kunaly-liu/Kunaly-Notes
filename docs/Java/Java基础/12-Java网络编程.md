@@ -1,6 +1,6 @@
 # Java网络编程
 
-[本文相关代码](Java/Java基础/Codes/NetDemo.zip)
+[本文相关代码](https://gitee.com/kunaly/kunaly-notes/raw/main/docs/Java/Java%E5%9F%BA%E7%A1%80/Codes/NetDemo.zip)
 
 ## 1.  概述
 

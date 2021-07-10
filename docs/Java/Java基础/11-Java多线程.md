@@ -1,6 +1,6 @@
 # Java 多线程
 
-[本文相关代码](Java/Java基础/Codes/ThreadDemo1.zip)
+[本文相关代码](https://gitee.com/kunaly/kunaly-notes/raw/main/docs/Java/Java%E5%9F%BA%E7%A1%80/Codes/ThreadDemo1.zip)
 
 ## 1. 相关概念
 

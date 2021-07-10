@@ -855,6 +855,39 @@ private static final Object PRESENT = new Object();
 
 第二个 PRESENT 对象，因为前面讲过 HashMap 是作为键值对 key-value 进行存储的，而 HashSet 不是键值对，那么选择 HashMap 作为实现，其原理就是存储在 HashSet 中的数据 作为 Map 的 key，而 Map 的value 统一为 PRESENT。
 
+**HashSet 遍历：**
+
+```java
+import java.util.*;
+
+public class test {
+    public static void main(String[] args) {
+        Set<Integer> set = new HashSet<>();
+        for(int i = 0; i < 10000; i++){
+            set.add((int)(Math.random() * 10000) + 1);
+        }
+
+        //1. forEach 循环遍历
+        for (int a: set) {
+            System.out.print(a+" ,");
+        }
+        System.out.println();
+
+        //2.forEach
+        set.forEach(x -> System.out.print(x + " ,"));
+        System.out.println();
+
+        //3.迭代器
+        Iterator<Integer> it = set.iterator();
+        while(it.hasNext()){
+            System.out.print(it.next() + " ,");
+        }
+        System.out.println();
+
+    }
+}
+```
+
 ##### 4.1.3.3 构造函数
 
 **无参构造**
