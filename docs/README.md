@@ -64,7 +64,8 @@
 
 > 🍋 本节的每个知识点都配备对应的 LeetCode 题目，知其然而知其所以然，**拒绝无脑刷题**。目前尚在更新中。。。
 
-- [🔥 LeetCode 分模块刷题指南](计算机基础/算法/LeetCode/刷题指南.md)
+- [🔥 LeetCode 分模块刷题指南](Algorithm/LeetCode刷题指南.md)
+- - [最易懂的贪心算法](Algorithm/贪心.md)
 
 ### 设计模式
 
