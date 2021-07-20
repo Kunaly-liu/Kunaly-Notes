@@ -55,15 +55,24 @@ Map接口有三个比较重要的实现类，分别是HashMap、TreeMap和HashTa
 
 > **HashTable和HashMap的区别：**
 >
-> 1. Hashtable是线程安全的，HashMap不是线程安全的。
+> 1. Hashtable是线程安全的，HashMap不是线程安全的；
 >
-> 2. HashMap效率较高，Hashtable效率较低。
->    
+> 2. HashMap效率较高，Hashtable效率较低；
+>
 >    如果对同步性或与遗留代码的兼容性没有任何要求，建议使用HashMap。 查看Hashtable的源代码就可以发现，除构造函数外，Hashtable的所有 public 方法声明中都有 synchronized关键字，而HashMap的源码中则没有。
->    
-> 3. Hashtable不允许null值，HashMap允许null值（key和value都允许）
->    
-> 4. 父类不同：Hashtable的父类是Dictionary，HashMap的父类是AbstractMap
+>
+> 3. 对 Null key 和 Null value 的⽀持： HashMap  可以存储 null 的 key 和 value，但 null 作为键只能有⼀个，null 作为值可以有多个；HashTable 不允许有 null 键和 null 值，否则会抛出 NullPointerException 。
+>
+> 4. 父类不同：Hashtable的父类是Dictionary，HashMap的父类是AbstractMap；
+>
+> 5. 初始容量⼤⼩和每次扩充容量⼤⼩的不同 ：
+>
+>     ① 创建时如果不指定容量初始值， Hashtable  默认的初始⼤⼩为 11，之后每次扩充，容量变为原来的 2n+1。 HashMap  默认的初始化⼤⼩为 16。之后每次扩充，容量变为原来的 2 倍。
+>
+>    ② 创建时如果给定了容量初始值，那么 Hashtable 会直接使⽤你给定的⼤⼩，⽽ HashMap  会将其扩充为 2 的幂次⽅⼤⼩（ HashMap  中的 tableSizeFor() ⽅法保证，下⾯给出了源代码）。也就是说 HashMap  总
+>    是使⽤ 2 的幂作为哈希表的⼤⼩,后⾯会介绍到为什么是 2 的幂次⽅。
+>
+> 6. 底层数据结构： JDK1.8 以后的 HashMap  在解决哈希冲突时有了较⼤的变化，当链表⻓度⼤于阈值（默认为 8）（将链表转换成红⿊树前会判断，如果当前数组的⻓度⼩于 64，那么会选择先进⾏数组扩容，⽽不是转换为红⿊树）时，将链表转化为红⿊树，以减少搜索时间。Hashtable 没有这样的机制。
 >
 
 
