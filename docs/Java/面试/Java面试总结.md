@@ -438,7 +438,7 @@ String s = input.readLine();
 
 **按操作方式分类结构图：**
 
-![](Java面试总结.assets/image-20210720015235287.png)
+![](https://gitee.com/Kunaly/picture-bed/raw/master/img/image-20210720015235287.png)
 
 **按操作对象分类结构图：**
 
@@ -788,7 +788,7 @@ Annotation（注解）是 Java 提供的一种对元程序中元素关联信息�
 
 **Java 集合框架图**
 
-<img src="Java面试总结.assets/20180803195348216" alt="这里写图片描述" style="zoom:150%;" />
+<img src="https://gitee.com/Kunaly/picture-bed/raw/master/img/20180803195348216" alt="这里写图片描述" style="zoom:150%;" /> 
 
 
 
@@ -893,7 +893,7 @@ StringBuilder 并没有对方法进行加同步锁，所以是线程不安全的
 
 6. 底层数据结构： JDK1.8 以后的 HashMap  在解决哈希冲突时有了较大的变化，当链表长度大于阈值（默认为 8）（将链表转换成红黑树前会判断，如果当前数组的长度小于 64，那么会选择先进行数组扩容，而不是转换为红黑树）时，将链表转化为红黑树，以减少搜索时间。Hashtable 没有这样的机制。
 
-![image-20210803002256766](Java面试总结.assets/image-20210803002256766.png)
+![image-20210803002256766](https://gitee.com/Kunaly/picture-bed/raw/master/img/image-20210803002256766.png)
 
 ![image-20210803002323578](Java面试总结.assets/image-20210803002323578.png)
 
@@ -920,15 +920,15 @@ ConcurrentHashMap  和 Hashtable  的区别主要体现在实现线程安全的�
 
   ② Hashtable （同一把锁, **全表锁**） :使用 `synchronized ` 来保证线程安全，效率非常低下。当一个线程访问同步方法时，其他线程也访问同步方法，可能会进入阻塞或轮询状态，如使用 put 添加元素，另一个线程不能使用 put 添加元素，也不能使用 get，竞争会越来越激烈效率越低。
 
-  ![image-20210720144747127](Java面试总结.assets/image-20210720144747127.png)
+  ![image-20210720144747127](https://gitee.com/Kunaly/picture-bed/raw/master/img/image-20210720144747127.png)
 
-![image-20210720144807261](Java面试总结.assets/image-20210720144807261.png)
+![image-20210720144807261](https://gitee.com/Kunaly/picture-bed/raw/master/img/image-20210720144807261.png)
 
 **JDK1.8 的 ConcurrentHashMap：(锁头节点)**
 
 JDK1.8 的 ConcurrentHashMap  不在是 Segment 数组 + HashEntry 数组 + 链表，而是 **Node 数组 + 链表 / 红黑树**。不过，Node 只能用于链表的情况，红黑树的情况需要使用 TreeNode 。当冲突链表达到一定长度时，链表会转换成红黑树。
 
-![image-20210803002448856](Java面试总结.assets/image-20210803002448856.png)
+![image-20210803002448856](https://gitee.com/Kunaly/picture-bed/raw/master/img/image-20210803002448856.png)
 
 
 
@@ -1043,7 +1043,7 @@ Arrays.sort并不是单一的排序，而是插入排序，快速排序，归并
 
 如下图：
 
-![image-20210723133007120](Java面试总结.assets/image-20210723133007120.png)
+![image-20210723133007120](https://gitee.com/Kunaly/picture-bed/raw/master/img/image-20210723133007120.png)
 
 
 
@@ -1150,11 +1150,11 @@ CyclicBarrier 并发工具
 
 Java 线程在运行的生命周期中的指定时刻只可能处于下面 6 种不同状态的其中一个状态（图源《Java 并发编程艺术》4.1.4 节）。
 
-![image-20210720013453394](Java面试总结.assets/image-20210720013453394.png)
+![image-20210720013453394](https://gitee.com/Kunaly/picture-bed/raw/master/img/image-20210720013453394.png)
 
 线程在生命周期中并不是固定处于某一个状态而是随着代码的执行在不同状态之间切换。Java 线程状态变迁如下图所示（图源《Java 并发编程艺术》4.1.4 节）：
 
-![image-20210720013535889](Java面试总结.assets/image-20210720013535889.png)
+![image-20210720013535889](https://gitee.com/Kunaly/picture-bed/raw/master/img/image-20210720013535889.png)
 
 由上图可以看出：
 
@@ -1194,7 +1194,7 @@ Java 线程在运行的生命周期中的指定时刻只可能处于下面 6 种
 
 如下图所示，线程 A 持有资源 2，线程 B 持有资源 1，他们同时都想申请对方的资源，所以这两个线程就会互相等待而进入死锁状态。
 
-<img src="Java面试总结.assets/image-20210720151745746.png" alt="image-20210720151745746" />
+<img src="https://gitee.com/Kunaly/picture-bed/raw/master/img/image-20210720151745746.png" alt="image-20210720151745746" />
 
 **死锁代码：**
 
@@ -1241,7 +1241,7 @@ public class DeadLock {
 
 运行结果：
 
-![image-20210720160019899](Java面试总结.assets/image-20210720160019899.png)
+![image-20210720160019899](https://gitee.com/Kunaly/picture-bed/raw/master/img/image-20210720160019899.png)
 
 线程 A 通过 synchronized (resource1) 获得 resource1 的监视器锁，然后通过Thread.sleep(1000); 让线程 A 休眠 1s 为的是让线程 B 得到执行然后获取到 resource2 的监视器锁。线程 A 和线程 B 休眠结束了都开始企图请求获取对方的资源，然后这两个线程就会陷入互相等待的状态，这也就产生了死锁。上面的例子符合产生死锁的四个必要条件。
 
@@ -1291,7 +1291,89 @@ public class DeadLock {
 ### 生产者消费者代码
 
 ```java
+package com.kun.thread.demo;
 
+import java.util.ArrayList;
+import java.util.List;
+
+//List模拟仓库,容量为1，即生产一个消费一个
+public class ProductConsumerDemo {
+    public static void main(String[] args) {
+        //创建一个仓库对象，共享的
+        List list = new ArrayList();
+        //创建两个线程对象
+        //生产者线程
+        Thread t1 = new Thread(new Producer(list));
+        //消费者线程
+        Thread t2 = new Thread(new Consumer(list));
+        t1.setName("生产者线程：");
+        t2.setName("消费者线程：");
+        t1.start();
+        t2.start();
+    }
+}
+//生产线程
+class Producer implements Runnable{
+    //仓库
+    private List list;
+
+    public Producer(List list) {
+        this.list = list;
+    }
+
+    @Override
+    public void run() {
+        //一直生产
+        while(true) {
+            synchronized (list) {//给仓库资源加锁
+                if (list.size() > 0) {
+                    //当前线程进入等待状态，释放锁，不放锁的话，消费者线程无法访问资源（生产者线程）
+                    try {
+                        list.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                //程序能执行到这里说明仓库为空，可以生产
+                Object obj = new Object();
+                list.add(obj);
+                System.out.println(Thread.currentThread().getName()+"-->"+"生产了"+ list.size() + "个"+obj +",消费者可以消费了。");
+                //唤醒消费者消费
+                list.notify();
+            }
+        }
+    }
+}
+//消费线程
+class Consumer implements Runnable{
+    //同一个仓库
+    private List list;
+    public Consumer(List list) {
+        this.list = list;
+    }
+    @Override
+    public void run() {
+        //一直消费
+        while (true){
+            synchronized (list){//没有得到锁，以下代码都不能执行
+                if(list.size()==0){
+                    //仓库空了，停止消费，消费线程进入阻塞，释放list集合的锁
+                    try {
+                        list.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                //程序能够执行到这，说明仓库有数据，进行消费
+                Object obj= list.remove(0);
+                System.out.println(Thread.currentThread().getName()+"-->"+"消费了" + obj + "还剩"+list.size()+"个,生产者该生产了。。。");
+                //唤醒生产者进行生产
+                list.notify();
+
+            }
+        }
+    }
+}
 ```
 
 
