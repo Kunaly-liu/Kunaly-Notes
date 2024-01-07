@@ -1,9 +1,9 @@
 💡 **「关于」**
 
-- 🎓 博主杭电计算机研究生在读，迫于找工作的压力，偷偷学点Java，奔跑在全栈的路上。本仓库用于记录学习过程中的所思所想，并力图构建一个完善的知识体系，便于复习巩固。
+- 🎓 博主菜鸟程序员一个，喜欢代码，奔跑在全栈的路上。本仓库用于记录学习过程中的所思所想，并力图构建一个完善的知识体系，便于复习巩固。
 - 🙏 由于本人水平有限，仓库中的知识点来自本人原创、视频、书籍、博客等，非原创均已标明出处（或在参考资料中列出），如有遗漏或发现文章错误及排版问题，请提 issue 或 PR
-- ⚡ [Gitee 在线阅读（国内访问速度较快）]( http://kunaly.gitee.io/kunaly-notes) 
-- 🔮 [Github 在线阅读](https://kunaly-liu.github.io/Kunaly-Notes) 
+- ⚡ [Gitee 在线阅读（国内访问速度较快）](http://kunaly.gitee.io/kunaly-notes)
+- 🔮 [Github 在线阅读](https://kunaly-liu.github.io/Kunaly-Notes)
 - 🔥 [Java面试总结背诵版](Java/面试/Java面试总结.md)
 
 ---
@@ -25,25 +25,9 @@
 - [11 - Java多线程](Java/Java基础/11-Java多线程.md)
 - [12 - Java网络编程](Java/Java基础/12-Java网络编程.md)
 
-### JAVA 框架
-
-- [1 - Spring]
-- [2 - SringMVC]
-- [3 - MyBatis]
-- [4 - SpringBoot]
-- [5 - SpringCloud]
-
-### JAVA 架构师
-
-### 分布式
-
-### 微服务
-
 ## **💌 数据库**
 
 ### MySQL
-
-### Oracle
 
 ## **🎨 前端**
 
@@ -69,6 +53,7 @@
 
 - [🔥 LeetCode 分模块刷题指南](Algorithm/LeetCode刷题指南.md)
 - [最易懂的贪心算法](Algorithm/贪心.md)
+
 ### 设计模式
 
 ## **📑 计算机必修课**
@@ -76,6 +61,7 @@
 > 😃 这里不知道写点什么。
 
 ### 数据结构 DS
+
 - [排序算法](计算机基础/数据结构/排序算法.md)
 
 ### 操作系统 OS
