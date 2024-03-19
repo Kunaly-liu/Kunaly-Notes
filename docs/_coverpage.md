@@ -22,7 +22,6 @@
 
 ![color](#333333) -->
 
-
 <!-- light -->
 
 <br>
@@ -33,9 +32,9 @@
     color: rgb(60, 60, 60); text-align: center;
     text-shadow: 0.3rem 0.3rem 0.4rem rgba(0,0,0,.15);
     line-height: 1.2;">
-	
-    你要悄悄拔尖，然后惊艳所有人。
-		
+
+你要悄悄拔尖，然后惊艳所有人。
+
 <br>
 
 <!--

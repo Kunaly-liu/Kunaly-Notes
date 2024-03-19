@@ -37,7 +37,8 @@ section.cover .cover-main {
 } */
 /* 内容居中和宽度 */
 .content{
-    width: 1000px;
+    /* width: 1000px; */
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 70px !important;
