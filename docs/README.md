@@ -1,4 +1,4 @@
-💡 **「关于」**
+## 💡 **「关于」**
 
 - 🎓 博主菜鸟程序员一个，喜欢代码，奔跑在全栈的路上。本仓库用于记录学习过程中的所思所想，并力图构建一个完善的知识体系，便于复习巩固。
 - 🙏 由于本人水平有限，仓库中的知识点来自本人原创、视频、书籍、博客等，非原创均已标明出处（或在参考资料中列出），如有遗漏或发现文章错误及排版问题，请提 issue 或 PR
@@ -26,7 +26,45 @@
 
 ### JAVA 面试
 
-🔥 [Java面试总结](Java/Java面试总结/Java面试.md)
+- 🔥 [Java面试总结背诵版](Java/Java面试总结/Java面试总结.md)
+- 🔥 [Java面试总结](Java/Java面试总结/Java面试.md)
+- [1 - Java基础](Java/Java面试总结/1-Java基础.md)
+- [2 - Java集合](Java/Java面试总结/2-Java集合.md)
+- [3 - Java多线程](Java/Java面试总结/3-Java多线程.md)
+- [4 - JVM](Java/Java面试总结/4-JVM.md)
+- [5 - MySQL](Java/Java面试总结/5-MySQL.md)
+- [6 - Redis](Java/Java面试总结/6-Redis.md)
+- [7 - Spring](Java/Java面试总结/7-Spring.md)
+- [8 - MyBatis](Java/Java面试总结/8-MyBatis.md)
+- [9 - SpringBoot](Java/Java面试总结/9-SpringBoot.md)
+- [10 - RabbitMQ](Java/Java面试总结/10-RabbitMQ.md)
+- [11 - 计算机网络](Java/Java面试总结/11-计算机网络.md)
+- [12 - 操作系统](Java/Java面试总结/12-操作系统.md)
+- [13- 数据结构](Java/Java面试总结/13-数据结构.md)
+- [14 - 设计模式](Java/Java面试总结/14-设计模式.md)
+- [15 - 分布式与微服务](Java/Java面试总结/15-分布式与微服务.md)
+- [16 - 项目与HR面](Java/Java面试总结/16-项目与HR面.md)
+- [17 - 常见面试代码](Java/Java面试总结/17-常见面试代码.md)
+
+
+
+### JAVA 杂记
+
+[基本类型和包装类型的区别](Java/Java杂记/基本类型和包装类型的区别.md)
+
+
+
+## ⚡C 语言
+
+
+
+## **🔐信息安全**
+
+### 密码学
+
+
+
+
 
 ## **📖内功修炼**
 
